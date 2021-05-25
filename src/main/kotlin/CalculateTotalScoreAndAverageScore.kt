@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
     var sumOfScore: Int = 0
     var studentScore: Int
     var numberOfScore: Int = 0
