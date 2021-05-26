@@ -48,7 +48,7 @@ class ScoreCalculator {
         println("Score entered: $scoresEnteredAsString")
         println("Number of scores entered: $numberOfScoresEntered")
         println("Total: $totalScore")
-        println("Average: ${totalScore/numberOfScoresEntered}")
+        println("Average: ${(totalScore/numberOfScoresEntered).toDouble()}")
     }
 }
 
