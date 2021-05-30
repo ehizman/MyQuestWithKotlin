@@ -1,4 +1,4 @@
-package ChapterFour
+package chapterFour
 import kotlin.math.pow
 
 class WorldPopulation {
