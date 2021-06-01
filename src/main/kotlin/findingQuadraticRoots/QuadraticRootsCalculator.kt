@@ -6,7 +6,7 @@ import kotlin.math.sqrt
 class QuadraticRootsCalculator {
     fun findRoots(coefficientOf_A: Int, coefficientOf_B: Int, coefficientOf_C: Int): Array<Double> {
 
-        val determinantOfQuadraticEquation : Double = coefficientOf_B.toDouble().pow(2.0) - (4 * coefficientOf_A *
+        val determinantOfQuadraticEquation = coefficientOf_B.toDouble().pow(2.0) - (4 * coefficientOf_A *
                 coefficientOf_C)
 
         if (determinantOfQuadraticEquation < 0.0){

@@ -2,8 +2,8 @@ class LargestAndSmallest {
 
 }
 fun main(){
-    var largest : Int = 0
-    var smallest : Int = 0
+    var largest : Int = Int.MIN_VALUE
+    var smallest : Int = Int.MAX_VALUE
     var currentInput : Int = 0
     println("This application takes in 10 numbers as input and then displays the largest and smallest")
 
