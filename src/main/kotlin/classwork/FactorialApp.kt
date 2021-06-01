@@ -9,5 +9,4 @@ class FactorialApp {
         }
         return (factorial)
     }
-
 }
