@@ -5,6 +5,7 @@ import kotlin.math.sqrt
 
 class QuadraticRootsCalculator {
     fun findRoots(coefficientOf_A: Int, coefficientOf_B: Int, coefficientOf_C: Int): Array<Double> {
+
         val determinantOfQuadraticEquation : Double = coefficientOf_B.toDouble().pow(2.0) - (4 * coefficientOf_A *
                 coefficientOf_C)
 
@@ -13,11 +14,15 @@ class QuadraticRootsCalculator {
             return arrayOf(0.0, 0.0)
         }
         else{
-            val firstRoot = Math.round((-(coefficientOf_B) + sqrt(determinantOfQuadraticEquation))/(2 * coefficientOf_A *
-                    coefficientOf_C) * 1000.0) / 1000.0
-            val secondRoot = Math.round((-(coefficientOf_B) - sqrt(determinantOfQuadraticEquation))/(2 * coefficientOf_A *
-                    coefficientOf_C) * 1000.0) / 1000.0
-            return arrayOf(firstRoot, secondRoot)
+            val numeratorOfEquationForFindingFirstRoot = (-(coefficientOf_B)) - sqrt (determinantOfQuadraticEquation)
+            val firstRoot = (numeratorOfEquationForFindingFirstRoot/(2 * coefficientOf_A * coefficientOf_C))
+            val firstRootToThreeDecimalPlaces = Math.round(firstRoot * 1000.0)/ 1000.0
+
+            val numeratorOfEquationForFindingSecondRoot = (-(coefficientOf_B)) + sqrt(determinantOfQuadraticEquation)
+            val secondRoot = (numeratorOfEquationForFindingSecondRoot/(2 * coefficientOf_A * coefficientOf_C))
+            val secondRootToThreeDecimalPlaces = Math.round(secondRoot * 1000.0)/ 1000.0
+
+            return arrayOf(firstRootToThreeDecimalPlaces, secondRootToThreeDecimalPlaces)
         }
     }
 }
